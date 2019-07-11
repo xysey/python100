@@ -9,6 +9,17 @@ printString: to print the string in upper case.
 Also please include simple test function to test the class methods.
 '''
 
-class For_the_string():
-    def getString(self,):
-        pass
+class ForTheString():
+    def __init__(self):
+        self.s = ''
+
+    def getString(self):
+        self.s = input()
+
+    def printString(self):
+        print(self.s.upper())
+
+if __name__ == "__main__":
+    myString = ForTheString()
+    myString.getString()
+    myString.printString()
