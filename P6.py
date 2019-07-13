@@ -16,11 +16,10 @@ The output of the program should be:
 '''
 from math import sqrt
 
-input_list = input()
-d_num_list = input_list.split(',')
-ans_list = ""
+d_num_list = input().split(',')
+ans_list = []
 for num in d_num_list:
     ans = int(sqrt((2 * 50 * int(float(num))) / 30))
-    ans_list = ans_list + str(ans) + ", "
+    ans_list.append(str(ans))
 
-print(ans_list.strip()[:-1])
+print(", ".join(ans_list))
