@@ -14,4 +14,4 @@ In case of input data being supplied to the question, it should be assumed to be
 '''
 numbers = input().split(', ')
 odd_num_sq = [str(int(num)**2) for num in numbers if int(num) % 2 != 0]
-print(", ".join(odd_num_sq1,))
+print(", ".join(odd_num_sq))
