@@ -19,7 +19,7 @@ ABd1234@1
 '''
 import re
 
-passwords = input().split(", ")
+passwords = input().split(",")
 correct_passwords = []
 for password in passwords:
 
